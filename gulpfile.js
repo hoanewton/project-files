@@ -43,7 +43,7 @@ gulp.task('less', function() {
 });
 
 gulp.task('serveprod', function() {
-  connect().use(serveStatic(__dirname)).listen(process.env.PORT || 8080, function(){
+  connect().use(serveStatic(process.env.PWD)).listen(process.env.PORT || 8080, function(){
     console.log('Server running on 8080...');
   });
 });
