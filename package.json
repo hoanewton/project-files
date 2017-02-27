@@ -14,5 +14,9 @@
     "gulp": "^3.9.1",
     "gulp-less-sourcemap": "^1.4.3",
     "gulp-sass": "^2.3.1"
+  },
+  "dependencies": {
+    "algoliasearch": "^3.21.1",
+    "algoliasearch-helper": "^2.18.1"
   }
 }
