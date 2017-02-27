@@ -40,6 +40,14 @@ gulp.task('less', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('serveprod', function() {
+  connect.server({
+    root: '/project-files',
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
+
 
 gulp.task('default', ['serve']);
 gulp.task('server', ['serve']);
