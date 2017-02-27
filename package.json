@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "gulp dev",
     "server": "gulp server"
-    "postinstall": "gulp default"
   },
   "author": "Algolia",
   "license": "Algolia",
@@ -20,7 +19,7 @@
     "algoliasearch": "^3.21.1",
     "algoliasearch-helper": "^2.18.1"
   },
-  "engines" {
+  "engines": {
     "node": "5.5.0"
   } 
 }
