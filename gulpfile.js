@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var less = require('gulp-less-sourcemap');
+var connect = require('connect');
+var serveStatic = require('serve-static');
 
 // Static Server
 gulp.task('serve', function() {
@@ -41,10 +43,8 @@ gulp.task('less', function() {
 });
 
 gulp.task('serveprod', function() {
-  connect.server({
-    root: '/project-files',
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
+  connect().use(serveStatic(__dirname)).listen(process.env.PORT || 8080, function(){
+    console.log('Server running on 8080...');
   });
 });
 
