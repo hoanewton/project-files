@@ -16,10 +16,12 @@
     "gulp-sass": "^2.3.1"
   },
   "dependencies": {
+    "connect": "^3.6.0",
+    "serve-static": "^1.12.0",
     "algoliasearch": "^3.21.1",
     "algoliasearch-helper": "^2.18.1"
   },
   "engines": {
     "node": "5.5.0"
-  } 
+  }
 }
