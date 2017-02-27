@@ -1,0 +1,262 @@
+/* line 20, /Users/macbook/Development/project-files/assets/scss/main.scss */
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f1f1f1; }
+
+/* line 26, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.main-content {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  margin: 40px 0 40px 0;
+  text-align: center;
+  font-size: 1.5em; }
+  /* line 40, /Users/macbook/Development/project-files/assets/scss/main.scss */
+  .main-content p {
+    margin: 5px; }
+
+/* line 45, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.search-header {
+  height: 100px;
+  display: block;
+  background: #31af78;
+  margin: 0 auto;
+  position: relative; }
+  /* line 51, /Users/macbook/Development/project-files/assets/scss/main.scss */
+  .search-header .box {
+    margin-right: -50%;
+    position: absolute;
+    width: 94%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    border-radius: 28px; }
+    /* line 61, /Users/macbook/Development/project-files/assets/scss/main.scss */
+    .search-header .box #search-box {
+      height: 100%;
+      background-color: #FFFFFF;
+      border-radius: 28px;
+      outline: none; }
+
+/* line 70, /Users/macbook/Development/project-files/assets/scss/main.scss */
+div.left-bar {
+  float: left;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  position: absolute; }
+
+/* line 77, /Users/macbook/Development/project-files/assets/scss/main.scss */
+div.search-content {
+  float: right; }
+
+/* algolia search style sheets*/
+/* line 82, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-input-container {
+  display: inline-block;
+  position: relative; }
+
+/* line 85, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-input-search {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  padding: 12px 28px 18px 12px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 94, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+  display: none; }
+
+/* line 96, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  fill: #e4e4e4; }
+
+/* line 105, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  min-width: 300px;
+  margin-top: 10px;
+  box-sizing: border-box; }
+
+/* line 111, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-suggestion {
+  padding: 12px;
+  cursor: pointer; }
+
+/* line 115, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.algolia-autocomplete {
+  width: 100%;
+  height: 100%; }
+
+/* line 119, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-suggestion + .aa-suggestion {
+  border-top: 1px solid rgba(228, 228, 228, 0.6); }
+
+/* line 122, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.aa-suggestion:hover, .aa-suggestion.aa-cursor {
+  background-color: rgba(241, 241, 241, 0.35); }
+
+/* line 127, /Users/macbook/Development/project-files/assets/scss/main.scss */
+#container li {
+  padding: 8px 0; }
+
+/* line 131, /Users/macbook/Development/project-files/assets/scss/main.scss */
+#container em {
+  background: #eac35b; }
+
+/* line 136, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.gray-text {
+  color: #7C7C7C;
+  line-height: 1.5em; }
+
+/* line 141, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.star-ratings-sprite {
+  background: url("../images/stars-icons.png");
+  background-size: 120px 50px;
+  font-size: 0;
+  height: 25px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 119px;
+  position: absolute;
+  margin: -2px 18px;
+  display: inline-block; }
+  /* line 154, /Users/macbook/Development/project-files/assets/scss/main.scss */
+  .star-ratings-sprite-rating {
+    background: url("../images/stars-icons.png");
+    background-size: 120px 50px;
+    background-position: 0 100%;
+    float: left;
+    height: 24px;
+    display: inline-block; }
+
+/* line 165, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.reviews-count {
+  position: absolute;
+  margin: 3px 157px; }
+
+/* line 172, /Users/macbook/Development/project-files/assets/scss/main.scss */
+a {
+  color: #333333; }
+
+/* line 176, /Users/macbook/Development/project-files/assets/scss/main.scss */
+hr {
+  margin: 10px 14px; }
+
+/* line 180, /Users/macbook/Development/project-files/assets/scss/main.scss */
+.main-section {
+  background: #F1F1F1;
+  min-height: 100%;
+  z-index: 1; }
+  /* line 185, /Users/macbook/Development/project-files/assets/scss/main.scss */
+  .main-section .left-bar {
+    top: 100px;
+    bottom: 10px;
+    height: 100%;
+    background: #FFFFFF;
+    border-right: 1px solid #E8E8E8;
+    padding: 40px 0;
+    line-height: 2em;
+    font-weight: bold; }
+    /* line 195, /Users/macbook/Development/project-files/assets/scss/main.scss */
+    .main-section .left-bar .facets-wrapper {
+      margin: 0 auto; }
+      /* line 197, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .left-bar .facets-wrapper .facet-header {
+        padding: 0 15px;
+        font-weight: bolder; }
+      /* line 202, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .left-bar .facets-wrapper li a {
+        display: block;
+        margin: 10px 0;
+        color: #7C7C7C;
+        font-family: Arial;
+        font-weight: lighter;
+        line-height: 2.5em; }
+        /* line 209, /Users/macbook/Development/project-files/assets/scss/main.scss */
+        .main-section .left-bar .facets-wrapper li a:hover {
+          color: #e5e5e5;
+          background: #333333;
+          text-decoration: none; }
+      /* line 217, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .left-bar .facets-wrapper .facet-list {
+        list-style: none;
+        line-height: 3em;
+        margin: 0 auto;
+        padding: 0 20px; }
+    /* line 227, /Users/macbook/Development/project-files/assets/scss/main.scss */
+    .main-section .left-bar #food_type label {
+      display: block;
+      cursor: pointer;
+      padding: 4px 4px 4px 8px;
+      font-weight: normal;
+      font-size: .9em;
+      margin: 0 0 -1px; }
+      /* line 234, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .left-bar #food_type label:hover {
+        color: #FFFFFF;
+        background: #333333; }
+      /* line 238, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .left-bar #food_type label input {
+        display: none; }
+  /* line 246, /Users/macbook/Development/project-files/assets/scss/main.scss */
+  .main-section .search-content {
+    height: 100%;
+    margin-bottom: 10px;
+    margin-left: 237px;
+    padding: 10px 0;
+    max-width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    /* line 255, /Users/macbook/Development/project-files/assets/scss/main.scss */
+    .main-section .search-content #stats {
+      padding-right: 14px;
+      font-size: .8em;
+      line-height: 24px; }
+    /* line 261, /Users/macbook/Development/project-files/assets/scss/main.scss */
+    .main-section .search-content #hits {
+      padding: 0 15px; }
+    /* line 265, /Users/macbook/Development/project-files/assets/scss/main.scss */
+    .main-section .search-content .hit {
+      margin-bottom: 10px;
+      /*height: ;*/
+      border: 1px solid #F3F3F3; }
+      /* line 270, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .search-content .hit em {
+        font-style: normal;
+        background: #FFFFD4;
+        text-decoration: underline; }
+      /* line 276, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .search-content .hit .media-object {
+        height: 130px;
+        width: 130px;
+        overflow: hidden;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center; }
+      /* line 285, /Users/macbook/Development/project-files/assets/scss/main.scss */
+      .main-section .search-content .hit .media-heading {
+        color: #E8E8E8;
+        font-weight: normal;
+        font-size: 18px; }
+
+/*# sourceMappingURL=../../scss */
