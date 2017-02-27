@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var less = require('gulp-less-sourcemap');
@@ -46,6 +47,11 @@ gulp.task('serveprod', function() {
   connect().use(serveStatic(process.env.PWD)).listen(process.env.PORT || 8080, function(){
     console.log('Server running on 8080...');
   });
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 
